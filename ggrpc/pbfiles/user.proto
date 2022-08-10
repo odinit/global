@@ -1,0 +1,45 @@
+// 这个就是protobuf的中间文件
+
+// 指定的当前proto语法的版本，有2和3
+syntax = "proto3";
+
+// 指定等会文件生成出来的package
+package service;
+option go_package = "/grpc_api";
+
+// 定义request model
+message AuthRequest{
+  string token = 1; // 1代表顺序
+}
+
+// 定义response model
+message AuthResponse{
+  bool checkLogin = 1; // 1代表顺序
+  string userUUID = 2;
+  string userGroups = 3;
+  int64 code = 4;
+  string userName = 5;
+  string email = 6;
+  string mobile = 7;
+  bytes permissions = 8;
+  int64 userID = 9;
+}
+
+// 定义服务主体
+service UserService{
+  // 定义方法
+  rpc GetAuthInfo(AuthRequest) returns(AuthResponse);
+}
+
+message NetSpaceRequest{
+  string userUUID = 1;
+}
+
+message NetSpaceResponse{
+  int64 spaceSize = 1;
+}
+
+service NetSpaceService{
+  rpc GetNetSpaceByUserUUID(NetSpaceRequest)returns(NetSpaceResponse);
+}
+
