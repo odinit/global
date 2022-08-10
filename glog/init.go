@@ -2,9 +2,9 @@ package glog
 
 import (
 	"github.com/natefinch/lumberjack"
+	"github.com/odinit/global/gvar"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"microbigdata/global/gvar"
 	"os"
 )
 

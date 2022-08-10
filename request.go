@@ -3,7 +3,7 @@ package global
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
-	"microbigdata/global/gutils"
+	"github.com/odinit/global/gutils"
 	"strings"
 )
 

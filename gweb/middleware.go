@@ -2,8 +2,8 @@ package gweb
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/odinit/global/ggrpc"
 	"go.uber.org/zap"
-	grpcapi "microbigdata/grpc_api/service"
 	"net/http"
 )
 
@@ -26,9 +26,9 @@ func AuthMiddle(c *gin.Context) {
 	}
 
 	// 解析token
-	auth, err := grpcapi.CheckLogin(token)
+	auth, err := ggrpc.CheckLogin(token)
 	if err != nil {
-		zap.L().Error("grpcapi.CheckLogin(token)", zap.Error(err))
+		zap.L().Error("ggrpc.CheckLogin(token)", zap.Error(err))
 		ErrTokenParseFail.Return(c)
 		c.Abort()
 		return
