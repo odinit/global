@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220810.02">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gweb/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/gweb/response.go" afterDir="false" />
-    </list>
+    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220816.01" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +67,8 @@
     <MESSAGE value="odinit:v20220810" />
     <MESSAGE value="odinit:v20220810.01" />
     <MESSAGE value="odinit:v20220810.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220810.02" />
+    <MESSAGE value="odinit:v20220816.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220816.01" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
