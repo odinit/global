@@ -2,52 +2,14 @@ package gweb
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/odinit/global/ggrpc"
-	"go.uber.org/zap"
 	"net/http"
 )
 
 //c.Abort() 作为中间件时,不继续往下一个Handler执行,中断后返回
 //c.Next() 继续向下一个Handler执行,后面的代码不继续执行
 
-// AuthMiddle
-// token验证相关,这里是作为中间件使用
-// 在需要用户验证的请求handler前添加该中间件
-func AuthMiddle(c *gin.Context) {
-	// 获取token,token保存在Header中的Authorization字段中
-	token := c.Request.Header.Get("Authorization")
-
-	// 未获取token,直接返回异常
-	if token == "" {
-		zap.L().Error("token为空", zap.Any("request", c.Request.URL.String()))
-		ErrTokenIsInvalid.Return(c)
-		c.Abort()
-		return
-	}
-
-	// 解析token
-	auth, err := ggrpc.CheckLogin(token)
-	if err != nil {
-		zap.L().Error("ggrpc.CheckLogin(token)", zap.Error(err))
-		ErrTokenParseFail.Return(c)
-		c.Abort()
-		return
-	}
-
-	// 如果用户为登录,返回异常
-	if auth.CheckLogin == false {
-		ErrUserNotLogin.Return(c)
-		c.Abort()
-		return
-	}
-
-	// 将该中间件获取的信息,传递到下一个Handler,避免重复操作
-	c.Set("userInfo", auth)
-	c.Next()
-}
-
-// Cors 处理跨域请求,支持options访问
-func Cors(c *gin.Context) {
+// CSRFMiddle 处理跨域请求,支持options访问
+func CSRFMiddle(c *gin.Context) {
 	method := c.Request.Method
 
 	c.Header("Access-Control-Allow-Origin", "*")
