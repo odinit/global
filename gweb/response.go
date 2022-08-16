@@ -18,6 +18,7 @@ const (
 	ErrTokenIsInvalid // 用户
 	ErrTokenParseFail
 	ErrUserNotLogin
+	ErrUserHasNoPermission
 
 	ErrPath // 文件
 	ErrFile
@@ -54,9 +55,10 @@ var codeMsgMap = map[code]string{
 	ErrCmdExecFail: "终端命令执行异常",
 
 	// 用户
-	ErrTokenIsInvalid: "非法token",
-	ErrTokenParseFail: "token解析异常",
-	ErrUserNotLogin:   "用户未登录",
+	ErrTokenIsInvalid:      "非法token",
+	ErrTokenParseFail:      "token解析异常",
+	ErrUserNotLogin:        "用户未登录",
+	ErrUserHasNoPermission: "用户没有权限",
 
 	// 文件
 	ErrPath: "路径异常",

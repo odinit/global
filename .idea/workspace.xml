@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220810">
-      <change beforePath="$PROJECT_DIR$/glog/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/glog/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gweb/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/gweb/middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/request.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types.go" beforeDir="false" />
+    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220810.02">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gweb/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/gweb/response.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
@@ -52,25 +51,6 @@
       <recent name="$PROJECT_DIR$/ggrpc" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="global" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="global" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -88,7 +68,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="odinit:v20220810" />
-    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220810" />
+    <MESSAGE value="odinit:v20220810.01" />
+    <MESSAGE value="odinit:v20220810.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220810.02" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
