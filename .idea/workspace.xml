@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220816.02:删除ggrpc">
+    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220816.03:删除ggrpc相关引用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gweb/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/gweb/middleware.go" afterDir="false" />
     </list>
@@ -18,6 +18,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/gweb/http.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/gweb/middleware.go" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gweb/response.go" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -75,7 +77,8 @@
     <MESSAGE value="odinit:v20220810.02" />
     <MESSAGE value="odinit:v20220816.01" />
     <MESSAGE value="odinit:v20220816.02:删除ggrpc" />
-    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220816.02:删除ggrpc" />
+    <MESSAGE value="odinit:v20220816.03:删除ggrpc相关引用" />
+    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220816.03:删除ggrpc相关引用" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
