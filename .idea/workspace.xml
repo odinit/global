@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="odinit:v20220816.04:更新middleware">
+    <list default="true" id="963813be-0125-4ef0-a42e-17fd7fdc8317" name="变更" comment="20220817:添加int转bool方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcs.go" beforeDir="false" afterPath="$PROJECT_DIR$/gtype/gslice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmysql/tables/app.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmysql/tables/docker.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmysql/tables/pbs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gmysql/tables/webstatic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gutils/gint.go" beforeDir="false" afterPath="$PROJECT_DIR$/gtype/gint.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gvar/gvar.go" beforeDir="false" afterPath="$PROJECT_DIR$/gvar/var.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/gutils/request.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +28,9 @@
         <option value="Go File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
@@ -52,7 +65,10 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Volumes/OdinDisk/Develop/github.com/odinit/global"
+    "last_opened_file_path": "/Volumes/OdinDisk/Develop/github.com/odinit/global",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,6 +76,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/gtype" />
+      <recent name="$PROJECT_DIR$/gutils" />
       <recent name="$PROJECT_DIR$/ggrpc" />
     </key>
   </component>
@@ -86,7 +105,8 @@
     <MESSAGE value="odinit:v20220816.02:删除ggrpc" />
     <MESSAGE value="odinit:v20220816.03:删除ggrpc相关引用" />
     <MESSAGE value="odinit:v20220816.04:更新middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="odinit:v20220816.04:更新middleware" />
+    <MESSAGE value="20220817:添加int转bool方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220817:添加int转bool方法" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -1,9 +1,8 @@
-package global
+package gutils
 
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
-	"github.com/odinit/global/gutils"
 	"strings"
 )
 
@@ -26,5 +25,5 @@ func CheckUuid(u string) error {
 // ParseBody
 // 解析request body中的信息
 func ParseBody(c *gin.Context, req interface{}) (err error) {
-	return gutils.ReaderUnmarshal(c.Request.Body, req)
+	return ReaderUnmarshal(c.Request.Body, req)
 }
